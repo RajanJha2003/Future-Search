@@ -8,6 +8,6 @@ app.get("/api", (_, res) => {
     res.status(200).json({ status: "ok" });
   });
   
-  server.listen(3001, () => {
-    console.log(`API Server started on port :3001`);
+  server.listen(process.env.PORT, () => {
+    console.log(`API Server started on port :${process.env.PORT}`);
   });
